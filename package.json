@@ -1,0 +1,33 @@
+{
+  "name": "yarn-installed",
+  "version": "1.0.0",
+  "description": "Check if Yarn is installed on the Users System",
+  "main": "index.js",
+  "keywords": ["has yarn", "yarn", "supported", "installed"],
+  "author": "Marvin Mieth <ntwcklng@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ntwcklng/yarn-installed/issues"
+  },
+  "repository": "ntwcklng/yarn-installed",
+  "engines": {
+    "node": ">= 6.6.0"
+  },
+  "license": "MIT",
+  "xo": {
+    "extends": "prettier"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "2.0.0",
+    "husky": "0.13.3",
+    "lint-staged": "3.4.1",
+    "prettier": "1.3.1",
+    "xo": "0.18.2"
+  }
+}
